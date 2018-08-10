@@ -43,9 +43,6 @@ class App extends React.Component {
           <li>
             <Link to="/cities">Cities</Link>
           </li>
-          <li>
-            <Link to="/name">Cities</Link>
-          </li>
         </ul>
         <Route path="/" component={Home} />
         <Route path="/airports" component={Airport} />
