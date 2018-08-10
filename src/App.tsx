@@ -5,15 +5,16 @@ import Name from "./components/Name";
 const Home = () => (
   <div>
     <h2> Home </h2>
+    React TS Starter for <Name firstName="Matt" lastName="Groff" />
   </div>
 );
 
 const Airport = () => (
   <div>
     <ul>
-      <li>Jomo Kenyatta</li>
-      <li>Tambo</li>
-      <li>Murtala Mohammed</li>
+      <li>George Bush International</li>
+      <li>Boston Logan</li>
+      <li>Lindbergh Field</li>
     </ul>
   </div>
 );
@@ -21,16 +22,12 @@ const Airport = () => (
 const City = () => (
   <div>
     <ul>
-      <li>San Francisco</li>
-      <li>Istanbul</li>
-      <li>Tokyo</li>
+      <li>Houston</li>
+      <li>Boston</li>
+      <li>San Diego</li>
     </ul>
   </div>
 );
-
-const NameRoute = () => {
-  return <Name firstName="Matt" lastName="Groff" />;
-};
 
 class App extends React.Component {
   public render() {
@@ -46,11 +43,13 @@ class App extends React.Component {
           <li>
             <Link to="/cities">Cities</Link>
           </li>
+          <li>
+            <Link to="/name">Cities</Link>
+          </li>
         </ul>
         <Route path="/" component={Home} />
         <Route path="/airports" component={Airport} />
         <Route path="/cities" component={City} />
-        <Route path="/name" render={NameRoute} />
       </div>
     );
   }
