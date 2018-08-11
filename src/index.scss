@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import './variables.scss';
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+// Fonts
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto-medium {
+  @extend .roboto;
+  font-weight: 500;
 }

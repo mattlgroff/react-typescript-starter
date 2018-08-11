@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.header {
+  background-color: $wireframes-grey;
+  padding: 30px;
+}
+
+.header-status {
+  font-size: $header-font-size;
+  @extend .roboto-medium;
+}
